@@ -1,7 +1,8 @@
 # Use your domain for a static website in an Amazon S3 bucket
 
 > This getting started tutorial shows you how to perform the following tasks:
-> <ul>
+
+<ul>
     <li>
       Register a domain name, such as example.com
   </li>
