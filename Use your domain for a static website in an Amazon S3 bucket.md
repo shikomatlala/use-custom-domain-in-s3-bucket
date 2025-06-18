@@ -18,3 +18,13 @@
 </ul>
 
 > When you're finished, you'll be able to open a browser, enter the name of your domain, and view your website
+
+Topics 
+<ul>
+    <li>
+        [Prerequisites](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-prerequisites)
+    </li>
+    <li>
+        [Step 1: Register a domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-find-domain-name)
+    </li>
+</ul>
