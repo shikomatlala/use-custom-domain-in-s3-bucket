@@ -32,5 +32,30 @@ Topics
 - [Step 8: Attach a bucket policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-attach-policy)
 - [Step 9: Test your domain endpoint](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-test-domain-endpoint)
 - [Step 10: Route DNS traffic for your domain to your website bucket](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-create-alias)
+      I know this is too late for the original question but there may be more people with the same issues (me last week).
+
+I was having the same issue while trying to create a route in route53 with CloudFormation. I was trying to redirect my domain www.example.com to example-bucket.s3-website-eu-west-1.amazonaws.com.
+
+It turns out you cannot redirect to an arbitrary bucket. The bucket name must be the same as the domain you're trying to alias. So if you want to redirect www.example.com, your bucket name must be www.example.com and the URL must be www.example.com.s3-website-eu-west-1.amazonaws.com.
+
+Moreover cloudformation has a weird syntax. Cloudformation doesn't need the name of the bucket (it already knows it). It only needs the endpoint.
+
+So instead of using something like
+```
+"AliasTarget": {
+               "DNSName" : "example-bucket.s3-website-eu-west-1.amazonaws.com",
+               "HostedZoneId" : "<zoneID>"
+             },
+```
+you need
+```
+"AliasTarget": {
+               "DNSName" : "s3-website-eu-west-1.amazonaws.com",
+               "HostedZoneId" : "<zoneID>"
+             },
+```
+And route53 where to redirect because the name of the route must be the same as the name of the bucket.
+
+
 - [Step 11: Test your website](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-test)
 - [Step 12 (optional): Use Amazon CloudFront to speed up distribution of your content](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-cloudfront)
