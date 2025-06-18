@@ -17,18 +17,4 @@
   </li>
 </ul>
 
-
-
-
-
-
-
-
-When you're finished, you'll be able to open a browser, enter the name of your domain, and view your website
-
-<ol>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
-</ol>
+> When you're finished, you'll be able to open a browser, enter the name of your domain, and view your website
