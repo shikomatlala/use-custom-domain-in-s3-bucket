@@ -32,7 +32,8 @@ Topics
 - [Step 8: Attach a bucket policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-attach-policy)
 - [Step 9: Test your domain endpoint](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-test-domain-endpoint)
 - [Step 10: Route DNS traffic for your domain to your website bucket](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-create-alias)
-      I know this is too late for the original question but there may be more people with the same issues (me last week).
+---
+I know this is too late for the original question but there may be more people with the same issues (me last week).
 
 I was having the same issue while trying to create a route in route53 with CloudFormation. I was trying to redirect my domain www.example.com to example-bucket.s3-website-eu-west-1.amazonaws.com.
 
@@ -56,6 +57,6 @@ you need
 ```
 And route53 where to redirect because the name of the route must be the same as the name of the bucket.
 
-
+---
 - [Step 11: Test your website](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-test)
 - [Step 12 (optional): Use Amazon CloudFront to speed up distribution of your content](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-cloudfront)
