@@ -29,3 +29,8 @@ Topics
 - [Step 5 : (optional): Set up your subdomain bucket for website redirect](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-subdomain-bucket-redirect)
 - [Step 6: Upload index to create website content](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-upload-content)
 - [Step 7: Edit S3 Block Public Access settings](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-block-access)
+- [Step 8: Attach a bucket policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-attach-policy)
+- [Step 9: Test your domain endpoint](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-test-domain-endpoint)
+- [Step 10: Route DNS traffic for your domain to your website bucket](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-create-alias)
+- [Step 11: Test your website](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-test)
+- [Step 12 (optional): Use Amazon CloudFront to speed up distribution of your content](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-s3.html#getting-started-cloudfront)
